@@ -18,10 +18,17 @@ else:
 print("----------------")
 x = 5
 while x > 0:
+    x -= 1
+    if x == 3:
+        continue
     print(x)
-    x -= 1;
     if x == 1:
         break
 else:
     print("in the else!!!")
 
+print("----------------")
+
+b = False
+x = 99 if b else 100
+print(x)
