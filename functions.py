@@ -37,3 +37,12 @@ show_many(1, 2, 3, 4, 5, color="red", size="large")
 values = [9, 8, "Albert"]
 keyvals = {"color": "green", "size": "medium", "value": "high"}
 show_many(1, 2, *values, **keyvals)
+
+def has_default(a, b = "Hello world"):
+    print(f"Messages are {a}, {b}")
+
+has_default("Jim", "Bonjour")
+has_default("Albert")
+
+print("Hello", "everyone", sep="--", end="")
+print("world")
