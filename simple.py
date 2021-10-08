@@ -54,3 +54,28 @@ print(h is h1)
 # print(3 is x)
 
 
+# semicolons are legal, but unnecessary, unless you put
+# multiple statements on a single line (yuk!)
+a = 1; b = 2;
+print(f"a is {a}, b is {b}")
+
+a = 0xFF00
+b = 0b10101010
+print(a)
+print(b)
+print(a & b)
+print(a | b)
+
+# print(True & True)
+# print(True | False)
+print(True and True)
+print(True or False)
+
+# imports by PEP8 convention *should* be at the top of the file!!!
+# from operator import xor
+# print(xor(True, True))
+# print(xor(True, False))
+import operator
+print(operator.xor(True, True))
+print(operator.xor(True, False))
+

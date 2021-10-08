@@ -13,3 +13,16 @@ print(numbers)
 print(numbers[0:5:2])
 print(numbers[-1:0:-1])
 print(numbers[::-1])
+
+t = 1, 2, 3
+t = (1, 2, 3)
+print(t)
+print(type(t))
+print(t[0:2])
+a, b = t[0:2]
+# a, b = t[0:3]  # NOPE, mismatched number of elements
+print(a)
+print(b)
+print(t[0])
+t[0] = 99
+print(t[0])
